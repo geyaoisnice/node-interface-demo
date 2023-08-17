@@ -1,6 +1,6 @@
 const express=require("express")
 const router=express.Router();
-const db=require("./mysql")
+const db=require("./connect")
 
 
 router.get("/getStudent",async(resquest,response,next)=>{

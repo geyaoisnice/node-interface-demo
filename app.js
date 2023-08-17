@@ -1,7 +1,7 @@
 const express=require("express")
-
+const cors=require("cors")
 const server=express()
-
+server.use(cors())
 server.use("/api",require("./router"))
 
 server.listen(8080,()=>{
